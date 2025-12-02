@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: 'Delius', sans-serif;
+  }
+  
+
+
+header{
+    display: flex;
+
+}
+header div {
+    width: 40%;
+    border: 3px solid orange;
+    justify-content: center;
+    background-color: rgb(165, 130, 107);
+
+}
+header div:last-child {
+    width: 40%;
+}
+
+header div:first-child{
+    display: flex;
+    align-items: center;
+}
+img {
+
+    width: 100%;
+}
+.dois-filhos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dois-filhos div{
+    display: 30%;
+}
+.dois-filhos .div-img{
+    display: flex;
+    align-items: center;
+}
+.tres-filhos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tres-filhos div{
+    width: 30%;
+}
+
+.cinco-filhos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* flex-direction: column;
+    height: 50vh; */
+}
+
+.cinco-filhos div{
+    width: 19%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+footer section{
+    width: 28%;
+}
+
+header h1 {
+    font-size: 4em;
+    color: orange;
+}
+footer a {
+    display: block;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="./receptor.php">
+        <label for="Nome">Nome</label>
+        <input type="text" id="Nome" name="Nome" placeholder="Digite o nome aqui">
+        <br>
+        <br>
+        <label for="Idade">Idade</label>
+        <input type="number" id="Idade" name="Idade" required min="18" max="80">
+        <br>
+        <br>
+        <label for="Nacimento">Nacimento </label>
+        <input type="date" id="Nacimento" name="Nacimento">
+        <br>
+        <br>
+        <label for="email">email </label>
+        <input type="email" id="email" name="email">
+        <br>
+        <br>
+        <label for="Senha">Senha </label>
+        <input type="password" id="Senha" name="Senha">
+        <br>
+        <br>
+        <label for="Cor">Cor </label>
+        <input type="color" id="Cor" name="Cor">
+        <br>
+        <br>
+        <input type="radio" id="op1" name="opcao" value="1">
+        <label for="op1">Opção 01</label><br>
+        <input type="radio" id="op2" name="opcao"value="2">
+        <label for="op2">Opção 02</label><br>
+
+        <label for="nivel"></label>
+        <input type="range" id="nivel" name="nivel"><br>
+        <br>
+
+        <label for="Curriculo">Curriculo</label>
+        <input type="file" id="Curriculo" name="Curriculo"><br>
+        <br>
+
+        <input type="checkbox" id="aceite " name="aceite">
+        <label for="aceite">Aceito os termos</label><br>
+        <br>
+
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+            <option value="SP">Sao Paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="ES">Espirito Santos</option>
+
+        </select>
+        <br>
+        <br>
+
+        <label for="comentario">comentario</label> <br>
+
+        <textarea name="comentario" id="comentario"></textarea>
+
+        <br>
+        <input type="reset" value="Limpar">
+        <button>Enviar</button>
+        <!-- <input type="submit" value="Enviar"> -->
+
+
+
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>

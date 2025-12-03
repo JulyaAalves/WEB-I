@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Piloto de Equipe F1</title>
+  
+</head>
+
+<body>
+  <center>
+    <h1><mark>Cadastro de Piloto de Equipe F1</mark> 🏎️🚦</h1>
+    <hr>
+    <blockquote>
+      <p><em>“A velocidade é a forma mais pura de liberdade.”</em></p>
+      <cite>— Ayrton Senna</cite>
+    </blockquote>
+    <form action="./receptor.php">
+  </center>
+
+  <label for="nome"><strong>Nome:</strong> </label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+
+  <label for="idade"><b>Idade:</b> </label>
+  <input type="number" id="idade" name="idade" min="18" placeholder="Digite sua idade"><br><br>
+
+  <label for="email"><i>Email:</i> </label>
+  <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+
+  <label for="equipe"><ins>Equipe Atual:</ins></label>
+  <select name="equipe" id="equipe">
+    <option value="">&rarr; Selecione a equipe &larr;</option>
+    <option value="redbull">Red Bull</option>
+    <option value="ferrari">Ferrari</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="mclaren">McLaren</option>
+    <option value="astonmartin">Aston Martin</option>
+    <option value="alpine">Alpine</option>
+    <option value="williams">Williams</option>
+  </select>
+  <br><br>
+
+  <label for="numeroCarro"><code>Número do Carro:</code></label>
+  <input type="number" name="numeroCarro" id="numeroCarro" min="1" max="99">
+  <br><br>
+
+  <label for="nivel"><del>Nível de experiência na F1:</del> <ins>Experiência atual:</ins></label><br>
+  <input type="range" id="nivel" name="nivel" min="0" max="10"><br><br>
+
+  <label for="fotoPiloto">Foto do Piloto:</label>
+  <input type="file" name="fotoPiloto" id="fotoPiloto" accept="image/*">
+  <br><br>
+
+  <label for="mensagem">Observação:</label><br>
+  <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+  <br><br>
+
+  <input type="checkbox" id="aceito" name="aceito" required>
+  <label for="aceito"><s>Não aceito</s> <strong>Aceito</strong> os termos de compromisso</label><br><br>
+
+  <input type="submit" value="Enviar &rarr;">
+  <input type="reset" value="Limpar &times;">
+  </form>
+
+  <hr>
+  <h2><p style="color: rgb(11, 30, 201)"> Galeria de Pilotos &#9733;</h2>
+  
+  <div class="galeria">
+    <figure>
+      <img alt="Piloto Red Bull"
+        src="max.jpg"
+        srcset="max.jpg 300w, max2.jpg 768w, max3.jpg 1280w"
+        sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, (max-width: 1920px) 1280px">
+      <figcaption><strong>Red Bull Racing</strong></figcaption>
+    </figure>
+    <figure>
+      <img alt="Piloto Ferrari"
+        src="lecler.jpg"
+        srcset="lecler.jpg 300w, lecler2.jpg 768w, lecler3.jpg 1280w"
+        sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, (max-width: 1920px) 1280px">
+      <figcaption><strong>Scuderia Ferrari</strong></figcaption>
+    </figure>
+    <figure>
+      <img alt="Piloto McLaren"
+        src="russell.jpg"
+        srcset="russell.jpg 300w, russell2.jpg  768w, russell3.jpg  1280w"
+        sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, (max-width: 1920px) 1280px">
+      <figcaption><strong>Mercedes AMG F1</strong></figcaption>
+    </figure>
+  </div>
+
+</body>
+
+</html>

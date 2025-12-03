@@ -1,0 +1,28 @@
+@import url('');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(81, 25, 233);
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+}
+
+#section1 img {
+    width: 300px;
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+}
+
+#section2 img {
+    width: 180px;
+}

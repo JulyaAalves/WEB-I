@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Cadastro de Piloto de Equipe F1🏎️🚦</h1>
+        <hr>
+        <form action="./receptor.php">
+    </center>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+    <label for="idade">Idade: </label>
+    <input type="number" id="idade" name="idade" min="18" placeholder="Digite sua idade"><br><br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+    <label for="equipe">Equipe Atual:</label>
+    <select name="equipe" id="equipe">
+        <option value="">Selecione a equipe</option>
+        <option value="redbull">Red Bull </option>
+        <option value="ferrari">Ferrari</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="mclaren">McLaren</option>
+        <option value="astonmartin">Aston Martin</option>
+        <option value="alpine">Alpine</option>
+        <option value="williams">Williams</option>
+    </select>
+    <br><br>
+    <label for="numeroCarro">Número do Carro:</label>
+    <input type="number" name="numeroCarro" id="numeroCarro" min="1" max="99">
+    <br><br>
+    <label for="nivel">Nivel de experiencia na F1:</label><br>
+    <input type="range" id="nivel" name="nivel" min="0" max="10"><br><br>
+
+    <label for="fotoPiloto">Foto do Piloto:</label>
+    <input type="file" name="fotoPiloto" id="fotoPiloto" accept="image/*">
+
+    <br><br>
+    <label for="mensagem">Observação:</label><br>
+    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+    <br>
+    <br>
+    <input type="checkbox" id="aceito" name="aceito" required>
+    <label for="aceito">Aceito os termos de compromisso</label><br><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+
+</form>
+</body>
+
+</html>

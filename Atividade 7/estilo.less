@@ -1,0 +1,131 @@
+
+
+@import "cores.less";
+/*
+@use 'cores';
+*/
+
+
+/* ------------------ VARIÁVEIS ------------------ */
+@w: 100;
+/* SCSS equivalente:
+$w: 100;
+*/
+
+
+
+.alerta(@cor-borda: white, @cor-texto: black, @cor-fundo: transparent) {
+    border: 1px solid @cor-borda;
+    color: @cor-texto;
+    background-color: @cor-borda;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* 
+@mixin alerta($cor_borda: white, $cor_t: black, $cor_f: transparent) {
+    border: 1px solid $cor_borda;
+    color: $cor_t;
+    background-color: $cor_borda;
+    padding: 10px;
+    border-radius: 5px;
+}
+*/
+
+
+/* ------------------ BODY ------------------ */
+body {
+    background-color: @cor2;
+}
+/* SCSS equivalente:
+body {
+    background-color: cores.$cor2;
+}
+*/
+
+
+/* ------------------ HEADER ------------------ */
+header {
+    background-color: @cor1;
+
+    h3 {
+        text-align: center;
+
+        &:hover {
+            color: aqua;
+        }
+    }
+}
+/* SCSS equivalente:
+header {
+    background-color: cores.$cor1;
+    h3 {
+        text-align: center;
+        &:hover {
+            color: aqua;
+        }
+    }
+}
+*/
+
+
+/* ------------------ PARÁGRAFOS ------------------ */
+p {
+    .alerta();
+}
+/* 
+p {
+    @include alerta;
+}
+*/
+
+
+/* ------------------ ALERTA INFO ------------------ */
+.alerta-info {
+    .alerta(blue, white, rgb(225, 0, 255));
+}
+/* SCSS equivalente:
+.alerta-info {
+    @include alerta(blue, white, rgb(225, 0, 255));
+}
+*/
+
+
+/* ------------------ BASE DE BOTÕES ------------------ */
+.botoes-base {
+    padding: 10px;
+    font-size: 1.2em;
+    width: (@w / 2) * 1px;
+}
+/* 
+%botao {
+    padding: 10px;
+    font-size: 1.2em;
+    width: ($w / 2) * 1px;
+}
+*/
+
+
+
+button {
+    &:extend(.botoes-base);
+}
+/* 
+button {
+    @extend %botao;
+}
+*/
+
+
+/* ------------------ BOTÕES ESPECÍFICOS ------------------ */
+.botao-confirmar {
+    background-color: green;
+    color: whitesmoke;
+}
+/* SCSS igual, sem alteração */
+
+
+.botao-deletar {
+    background-color: red;
+    color: whitesmoke;
+}
+/* SCSS igual, sem alteração */
